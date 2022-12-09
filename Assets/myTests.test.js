@@ -1,5 +1,4 @@
 const capitalize = require('./capitalize');
-const sum = require('./sum');
 const reverseString = require('./reverse');
 const calculator = require('./calculator');
 
@@ -8,10 +7,6 @@ test('Is first letter capitalized', () => {
   expect(capitalize('word')).toBe('Word');
   expect(capitalize('me')).toBe('Me');
 })
-
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-});
 
 test('is string reversed', () => {
   expect(reverseString('string')).toBe('gnirts');

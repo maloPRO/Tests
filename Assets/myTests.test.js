@@ -21,7 +21,14 @@ test('is string reversed', () => {
 
 test('calculator', () => {
   expect(calculator.add(2, 2)).toEqual(4);
+  expect(calculator.add(4, 1)).toEqual(5);
+
   expect(calculator.subtract(2, 1)).toEqual(1);
+  expect(calculator.subtract(1, 3)).toEqual(-2);
+
   expect(calculator.multiply(2, 2)).toEqual(4);
+  expect(calculator.multiply(1.5, 1.1)).toBeCloseTo(1.65);
+  
   expect(calculator.divide(3, 2)).toBeCloseTo(1.5);
+  expect(calculator.divide(10, 3)).toBeCloseTo(3.33);
 })

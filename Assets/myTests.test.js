@@ -1,6 +1,7 @@
 const capitalize = require('./capitalize');
 const reverseString = require('./reverse');
 const calculator = require('./calculator');
+const arrayAnalyzer = require('./analyzer');
 
 test('Is first letter capitalized', () => {
   expect(capitalize('string')).toBe('String');
@@ -26,4 +27,9 @@ test('calculator', () => {
   
   expect(calculator.divide(3, 2)).toBeCloseTo(1.5);
   expect(calculator.divide(10, 3)).toBeCloseTo(3.33);
+})
+
+test('array analysis', () => {
+  expect(arrayAnalyzer([1,8,3,4,2,6])).toEqual({average: 4, min: 1, max: 8, length: 6});
+  expect(arrayAnalyzer([2,1,6])).toEqual({average: 3, min: 1, max: 6, length: 3});
 })

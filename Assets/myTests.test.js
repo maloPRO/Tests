@@ -14,7 +14,9 @@ test('adds 1 + 2 to equal 3', () => {
 });
 
 test('is string reversed', () => {
-  expect(reverseString('string')).toBe('gnirts')
+  expect(reverseString('string')).toBe('gnirts');
+  expect(reverseString('good')).toBe('doog');
+  expect(reverseString('good day sir')).toBe('ris yad doog');
 });
 
 test('calculator', () => {
